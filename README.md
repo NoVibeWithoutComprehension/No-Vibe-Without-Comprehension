@@ -1,1 +1,2 @@
 # No-Vibe-Without-Comprehension
+This supplement includes the metadata and the datasets that would enable other researchers to reproduce the experiment. The files are: a)The experiment protocol b)The code snippets under task performance c) the EEG data of the subjects (anonymous) d) The Physiological data of the subjects (anonymous), c) the pre-processing codes of biometrics data, d) the features with descirption in a CSV file associated with the labels, e) The performance values of comprehension tasks
