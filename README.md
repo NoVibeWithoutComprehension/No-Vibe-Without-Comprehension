@@ -1,2 +1,32 @@
 # No-Vibe-Without-Comprehension
-This supplement includes the metadata and the datasets that would enable other researchers to reproduce the experiment. The files are: a)The experiment protocol b)The code snippets under task performance c) the EEG data of the subjects (anonymous) d) The Physiological data of the subjects (anonymous), c) the pre-processing codes of biometrics data, d) the features with descirption in a CSV file associated with the labels, e) The performance values of comprehension tasks
+
+This repository contains data, scripts, and modeling results from two experimental studies (Study 0 and Study 0+) focused on predicting code understanding using physiological signals (EEG, eye tracking, HRV) and contextual metadata.
+
+---
+
+## 📁 Repository Structure
+
+```plaintext
+├── Data/
+│   ├── Study 0/
+│   │   ├── EEG Data/           # EEG signal files (CSV format, per participant/task)
+│   │   ├── Eye Data/           # Eye tracking data (CSV: fixations, timestamps, coordinates)
+│   │   ├── HRV Data/           # Heart rate variability signals (CSV)
+│   │   └── Volunteer Data/     # Demographics, background, comprehension scores (CSV)
+│   ├── Study 0+/
+│   │   ├── Code Snippets/      # Code shown to participants in Study 0+ (PNG or TXT)
+│   │   ├── EEG Data/
+│   │   ├── Eye Data/
+│   │   ├── HRV Data/
+│   │   ├── Volunteer Data/
+│   │   └── Utils/              # Scripts for preprocessing and synchronization
+│   └── combined_study_data.csv # Merged dataset with features and labels used for modeling
+│
+├── results/
+│   ├── Modeling_Results_with_Confidence.csv  # Main metrics and CI estimates for models
+│   └── train-test balance.png                # Distribution of classes across train/test
+│
+├── src/
+│   ├── utils/               # Helper functions for feature extraction, metrics, CI computation
+│
+├── README.md                # This file
