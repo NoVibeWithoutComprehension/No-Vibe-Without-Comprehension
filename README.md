@@ -1,4 +1,4 @@
-# No-Vibe-Without-Comprehension
+# Beyond-Vibe-Coding
 
 Repository with the merged Study 0 / Study 0+ dataset and modeling scripts for
 predicting code comprehension from physiological, code, and participant
